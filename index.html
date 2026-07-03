@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đoàn Tú - Hồ Sơ Cá Nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header h2 {
+            font-size: 1.3em;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .info-item strong {
+            color: #667eea;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .contact-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .contact-list li {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .contact-list li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-color: #667eea;
+            background: #fff;
+        }
+        
+        .contact-list a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 30px 0;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .content {
+                padding: 20px;
+            }
+            .header {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/705822400_4444009469252677_3117336562441986837_n.jpg?stp=dst-jpg_tt6&cstp=mx640x960&ctp=s640x960&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHT0eveicwk9X1QrkJTJPUxWZdTt9flBa5Zl1O31-UFricNapRQtQamH5UeSwPy5Jb2MizNRX9PbAynmfftLT49&_nc_ohc=-5fmmSUlezwQ7kNvwHejaor&_nc_oc=Adq7PfEFyP96LrCY4-tiigx6XL8O8Wxq_0gPTRBXcojkhO-N2ypoFtPiWA-hSHUMqvsP-B8jNpKSXL_5_RFwELTj&_nc_zt=23&_nc_ht=scontent.fdad3-6.fna&_nc_gid=0aC9c0VeVaFYGNlfONoTUA&_nc_ss=7b2a8&oh=00_AQBwEjt2CFYiExpMd-sgduwT6wF_sdMKvuBP-CvJadcgbw&oe=6A4C8987" 
+                 alt="Đoàn Tú" 
+                 class="profile-img">
+            <h1>Đoàn Tú</h1>
+            <h2>A Xiu - Hỗ trợ trao đổi OTC ( USDT,... ) uy tín</h2>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h3>Giới thiệu</h3>
+                <p>Xin chào! Tôi là Đoàn Tú, hiện đang làm việc trong lĩnh vực OTC. Tôi đam mê thể thao, đặc biệt là bóng đá, và luôn nỗ lực để trở nên chuyên nghiệp trong công việc.</p>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="section">
+                <h3>Thông tin cá nhân</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Tên:</strong> Đoàn Tú (A Xiu)
+                    </div>
+                    <div class="info-item">
+                        <strong>Tuổi:</strong> 25 tuổi
+                    </div>
+                    <div class="info-item">
+                        <strong>Nơi ở:</strong> Đà Nẵng
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="section">
+                <h3>Sở thích</h3>
+                <span class="badge">Chơi bóng đá</span>
+                <span class="badge">Tắm biển</span>
+                <span class="badge">Méc Si</span>
+                <span class="badge">Ăn mì quảng</span>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="section">
+                <h3>Liên hệ</h3>
+                <ul class="contact-list">
+                    <li onclick="window.open('https://www.facebook.com/doantu2910', '_blank')">
+                        <span>📘 <strong>Facebook:</strong> Đoàn Tú</span>
+                    </li>
+                    <li onclick="window.location.href='tel:+84774969141'">
+                        <span>📞 <strong>Điện thoại:</strong> 0774969141</span>
+                    </li>
+                    <li onclick="window.open('https://t.me/doantu2910', '_blank')">
+                        <span>✈️ <strong>Telegram:</strong> @doantu2910</span>
+                    </li>
+                    <li onclick="window.location.href='sms:+84774969141'">
+                        <span>💬 <strong>Nhắn tin SMS:</strong> 0774969141</span>
+                    </li>
+                    <li onclick="window.location.href='https://zalo.me/0774969141'" target="_blank">
+                        <span>💙 <strong>Zalo:</strong> 0774969141</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
